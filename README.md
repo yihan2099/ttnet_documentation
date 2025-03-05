@@ -1,7 +1,5 @@
 ---
 icon: hand-wave
-cover: https://gitbookio.github.io/onboarding-template-images/header.png
-coverY: 0
 layout:
   cover:
     visible: true
@@ -9,7 +7,7 @@ layout:
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
@@ -18,12 +16,49 @@ layout:
     visible: true
 ---
 
-# Welcome
+# Welcome to TTNet Documentation
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+Welcome to the official documentation for TTNet. This guide provides comprehensive information about our datasets, models, and rules management systems.
 
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+## What is TTNet?
 
-### Jump right in
+TTNet is a platform designed to facilitate the management, training, and deployment of machine learning models with a focus on data quality and rule validation.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td>Create your first site</td><td></td><td></td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td></td><td></td><td><a href="getting-started/publish-your-docs.md">publish-your-docs.md</a></td></tr></tbody></table>
+## Documentation Overview
+
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Getting Started</strong></td>
+      <td>Quick introduction to using TTNet</td>
+      <td><a href="getting-started/quickstart.md">quickstart.md</a></td>
+    </tr>
+    <tr>
+      <td><strong>Datasets</strong></td>
+      <td>Managing and ensuring quality of your datasets</td>
+      <td><a href="datasets/overview.md">overview.md</a></td>
+    </tr>
+    <tr>
+      <td><strong>Models</strong></td>
+      <td>Training and deploying models</td>
+      <td><a href="models/overview.md">overview.md</a></td>
+    </tr>
+    <tr>
+      <td><strong>Rules</strong></td>
+      <td>Creating and validating rules</td>
+      <td><a href="rules/overview.md">overview.md</a></td>
+    </tr>
+    <tr>
+      <td><strong>TTNet MLflow</strong></td>
+      <td>MLflow integration for experiment tracking</td>
+      <td><a href="ttnet-mlflow/index.md">index.md</a></td>
+    </tr>
+  </tbody>
+</table>

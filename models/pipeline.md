@@ -1,8 +1,8 @@
-## AutoML Pipeline Overview
+# AutoML Pipeline Overview
 
-This project implements an AutoML pipeline for the TTNet (Truth Table Network) model using MLflow for experiment tracking and model management. The pipeline consists of several key stages, each designed to automate the process of model development, evaluation, and deployment.
+This page provides information about the AutoML pipeline in TTNet, which automates the process of model development, evaluation, and deployment.
 
-### Pipeline Sections
+## Pipeline Sections
 
 The AutoML pipeline is divided into multiple interconnected components:
 
@@ -15,7 +15,7 @@ Below is a detailed explanation of each component in the AutoML pipeline.
 
 ---
 
-### 1. Dataset Processing Pipeline
+## 1. Dataset Processing Pipeline
 
 The dataset processing pipeline is responsible for preparing the raw data for model training. It includes several important stages:
 
@@ -71,7 +71,7 @@ Columns are dropped based on the following conditions:
 - **Duplicate Columns:** Columns that are duplicates of others.
 - **High Skewness or Kurtosis:** Numeric columns with skewness or kurtosis above thresholds (e.g., 10).
 
-### 2. Feature Engineering Pipeline
+## 2. Feature Engineering Pipeline
 
 The feature engineering pipeline refines features for optimal model performance:
 
@@ -115,7 +115,7 @@ The feature engineering pipeline refines features for optimal model performance:
 **Data Splitting**:
    - Splits the processed data into training, validation, and test sets in preparation for modeling.
 
-### 3. Model Training and Evaluation Pipeline
+## 3. Model Training and Evaluation Pipeline
 
 The core model training process of the AutoML pipeline includes:
 
@@ -144,7 +144,7 @@ The following models are trained and evaluated:
 
 Each model is trained using the specified encoding strategies and evaluated based on accuracy and other metrics.
 
-### 4. Rule Generation and Model Deployment Pipeline
+## 4. Rule Generation and Model Deployment Pipeline
 
 The final part of the AutoML pipeline involves rule extraction and model deployment:
 
@@ -157,6 +157,6 @@ The final part of the AutoML pipeline involves rule extraction and model deploym
 3. **Push Rules into PostgreSQL**:
    - Stores the generated rules in a PostgreSQL database, associating each rule with the corresponding model ID for easy reference and future inference.
 
-### Overview
+## Pipeline Overview
 
-The **AutoML Pipeline** for TTNet comprises several interconnected sub-pipelines that streamline the process of data preprocessing, feature engineering, model training, and rule generation. Each stage in the pipeline has been carefully designed to support automation, reproducibility, and interpretability, leveraging MLflow for experiment tracking and model management. This end-to-end automation allows users to efficiently generate interpretable models with minimal manual intervention while ensuring a reliable and repeatable workflow.
+The **AutoML Pipeline** for TTNet comprises several interconnected sub-pipelines that streamline the process of data preprocessing, feature engineering, model training, and rule generation. Each stage in the pipeline has been carefully designed to support automation, reproducibility, and interpretability, leveraging MLflow for experiment tracking and model management. This end-to-end automation allows users to efficiently generate interpretable models with minimal manual intervention while ensuring a reliable and repeatable workflow. 

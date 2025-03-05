@@ -5,20 +5,19 @@
 ## Getting Started
 
 * [Quickstart](getting-started/quickstart.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
 
-## Basics
+## Datasets
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [Overview](datasets/overview.md)
+* [Input Data Requirements](datasets/input-data-requirement.md)
+* [Data Analysis](datasets/data-analysis.md)
 
-## TTNet MLflow
+## Models
 
-* [Overview](ttnet-mlflow/index.md)
-* [Pipeline](ttnet-mlflow/pipeline.md)
-* [Data Analysis](ttnet-mlflow/data-analysis.md)
-* [Rule Validation](ttnet-mlflow/rule-validation.md)
+* [Overview](models/overview.md)
+* [Pipeline](models/pipeline.md)
+
+## Rules
+
+* [Overview](rules/overview.md)
+* [Rule Validation](rules/rule-validation.md)

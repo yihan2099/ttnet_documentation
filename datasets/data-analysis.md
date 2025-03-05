@@ -1,4 +1,4 @@
-# Data Analysis Documentation
+# Data Analysis
 
 ## Overview
 
@@ -306,4 +306,4 @@ metadata = analyzer.generate_metadata(
 4. **Documentation**
    - Record configuration changes
    - Document drop decisions
-   - Track warning resolutions
+   - Track warning resolutions 

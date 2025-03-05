@@ -4,20 +4,90 @@ icon: bullseye-arrow
 
 # Quickstart
 
-<figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-hero.png" alt=""><figcaption></figcaption></figure>
+This guide provides a quick introduction to getting started with TTNet.
 
-Beautiful documentation starts with the content you create — and GitBook makes it easy to get started with any pre-existing content.
+## Installation
 
-{% hint style="info" %}
-Want to learn about writing content from scratch? Head to the [Basics](https://github.com/GitbookIO/onboarding-template/blob/main/getting-started/broken-reference/README.md) section to learn more.
-{% endhint %}
+Install TTNet using pip:
 
-### Import
+```bash
+pip install ttnet
+```
 
-GitBook supports importing content from many popular writing tools and formats. If your content already exists, you can upload a file or group of files to be imported.
+For other installation options, see the [installation guide](installation.md).
 
-<div data-full-width="false"><figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-import.png" alt=""><figcaption></figcaption></figure></div>
+## Basic Usage
 
-### Sync a repository
+### 1. Initialize TTNet
 
-GitBook also allows you to set up a bi-directional sync with an existing repository on GitHub or GitLab. Setting up Git Sync allows you and your team to write content in GitBook or in code, and never have to worry about your content becoming out of sync.
+```python
+from ttnet import TTNet
+
+# Initialize TTNet
+ttnet = TTNet()
+```
+
+### 2. Working with Datasets
+
+```python
+# Create a new dataset
+dataset = ttnet.datasets.create("my_dataset")
+
+# Upload data to the dataset
+dataset.upload("path/to/data.csv")
+
+# Analyze data quality
+quality_report = dataset.analyze_quality()
+print(quality_report)
+```
+
+### 3. Working with Models
+
+```python
+# Create a new model
+model = ttnet.models.create("my_model")
+
+# Train the model
+training_job = model.train(
+    dataset=dataset,
+    hyperparameters={
+        "learning_rate": 0.01,
+        "epochs": 10
+    }
+)
+
+# Monitor training progress
+training_job.monitor()
+
+# Deploy the model
+deployment = model.deploy(
+    name="my-model-api",
+    deployment_type="api"
+)
+```
+
+### 4. Working with Rules
+
+```python
+# Create a new rule
+rule = ttnet.rules.create(
+    name="my_rule",
+    description="A sample rule",
+    rule_code="value > 0"
+)
+
+# Validate the rule
+validation_result = rule.validate(dataset=dataset)
+print(validation_result)
+
+# Apply the rule
+application_result = rule.apply(dataset=dataset)
+print(application_result)
+```
+
+## Next Steps
+
+- Learn more about [Dataset Management](../datasets/data-management.md)
+- Explore [Model Training](../models/model-training.md)
+- Understand [Rule Validation](../rules/rule-validation.md)
+- Check out the [TTNet MLflow integration](../ttnet-mlflow/index.md)
